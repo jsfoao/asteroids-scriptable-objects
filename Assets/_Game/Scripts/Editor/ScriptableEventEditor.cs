@@ -18,18 +18,4 @@ namespace _Game.Scripts.Editor
             }
         }
     }
-    
-    [CustomEditor(typeof(ScriptableEventFloatRef))]
-    public class ScriptableEventFloatRefEditor : Editor
-    {
-        public override void OnInspectorGUI()
-        {
-            base.OnInspectorGUI();
-            if (GUILayout.Button("Debug Raise Event"))
-            {
-                Debug.Log($"Debug Raised {target.name}");
-                ((ScriptableEventFloatRef)target).Raise();
-            }
-        }
-    }
 }

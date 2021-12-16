@@ -16,7 +16,7 @@ public class Runtime : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            onHealthChangedEvent.Raise();
+            onHealthChangedEvent.Raise(healthRef);
         }
     }
 }

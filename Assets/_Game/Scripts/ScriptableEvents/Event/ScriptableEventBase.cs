@@ -36,7 +36,6 @@ namespace ScriptableEvents.Event
     public class ScriptableEventBase<TPayload> : ScriptableEventBase
     {
         private event Action<TPayload> _event;
-        [SerializeField] private TPayload _payload;
 
         public void Register(Action<TPayload> onEvent)
         {
@@ -48,9 +47,9 @@ namespace ScriptableEvents.Event
             _event -= onEvent;
         }
 
-        public void Raise()
+        public void Raise(TPayload payload)
         {
-            _event?.Invoke(_payload);
+            _event?.Invoke(payload);
         }
     }
 }
