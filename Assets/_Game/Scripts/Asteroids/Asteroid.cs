@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -19,9 +20,11 @@ namespace Asteroids
 
         private Rigidbody2D _rigidbody;
         private Vector3 _direction;
+        private int _instanceId;
 
         private void Start()
         {
+            _instanceId = GetInstanceID();
             _rigidbody = GetComponent<Rigidbody2D>();
             
             SetDirection();

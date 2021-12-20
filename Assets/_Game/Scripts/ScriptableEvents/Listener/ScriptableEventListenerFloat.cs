@@ -1,4 +1,6 @@
-﻿namespace ScriptableEvents
+﻿using ScriptableEvents.Listener;
+
+namespace ScriptableEvents
 {
-    public class ScriptableEventListenerFloat : ScriptableEventListenerBase<float> { }
+    public class ScriptableEventListenerFloat : ScriptableEventListener<float> { }
 }

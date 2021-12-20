@@ -8,8 +8,7 @@ namespace ScriptableEvents.Event
     /// To raise events that don't take any data:
     /// Playing sound, vfx, etc
     /// </summary>
-    [CreateAssetMenu(fileName = "Scriptable Event", menuName = "Scriptable Object/Scriptable Event")]
-    public class ScriptableEventBase : ScriptableObject
+    public abstract class ScriptableEventBase : ScriptableObject
     {
         private event Action _eventNoPayload;
     
@@ -29,11 +28,14 @@ namespace ScriptableEvents.Event
         }
     }
 
+    [CreateAssetMenu(fileName = "Scriptable Event", menuName = "Scriptable Object/Scriptable Event", order = 0)]
+    public class ScriptableEvent : ScriptableEventBase { }
+
     /// <summary>
     /// Action: Encapsulates a method that has a single parameter and does not return a value.
     /// For health for example, we want to pass in int/float data
     /// </summary>
-    public class ScriptableEventBase<TPayload> : ScriptableEventBase
+    public abstract class ScriptableEventBase<TPayload> : ScriptableEventBase
     {
         private event Action<TPayload> _event;
 

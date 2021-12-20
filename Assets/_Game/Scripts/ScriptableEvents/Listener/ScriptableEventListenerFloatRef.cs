@@ -1,6 +1,7 @@
-﻿using Vars;
+﻿using ScriptableEvents.Listener;
+using Vars;
 
 namespace ScriptableEvents
 {
-    public class ScriptableEventListenerFloatRef : ScriptableEventListenerBase<FloatRef> { }
+    public class ScriptableEventListenerFloatRef : ScriptableEventListener<FloatRef> { }
 }
