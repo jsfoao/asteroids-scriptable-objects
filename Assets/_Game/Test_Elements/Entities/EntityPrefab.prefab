@@ -248,6 +248,7 @@ GameObject:
   - component: {fileID: 2888339489333149325}
   - component: {fileID: 2888339489333149322}
   - component: {fileID: 2888339489333149313}
+  - component: {fileID: -5074294788430924624}
   m_Layer: 0
   m_Name: EntityPrefab
   m_TagString: Untagged
@@ -360,5 +361,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 744ee85bf2da1c647aab3d17f0cfb483, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  element: {fileID: 11400000, guid: 0ef0ae30e725b294a9af8f225d438713, type: 2}
+  element: {fileID: 11400000, guid: ab5803182db217f44ba33f381c1ce357, type: 2}
   label: {fileID: 2888339487913698741}
+  onHitEvent: {fileID: 11400000, guid: 2d1cd41b798e9f24a8a15a8aa341ec91, type: 2}
+  destroyedElements: 0
+--- !u!114 &-5074294788430924624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2888339489333149323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9f42e8f3d8e4faeb283bfd27fdff1ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventNoPayload: {fileID: 0}
+  _responseNoPayload:
+    m_PersistentCalls:
+      m_Calls: []
+  _event: {fileID: 11400000, guid: 2d1cd41b798e9f24a8a15a8aa341ec91, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2888339489333149313}
+        m_TargetAssemblyTypeName: Entity, Assembly-CSharp
+        m_MethodName: DebugDestroy
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2888339489333149313}
+        m_TargetAssemblyTypeName: Entity, Assembly-CSharp
+        m_MethodName: OnHitByEntity
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2888339489333149313}
+        m_TargetAssemblyTypeName: Entity, Assembly-CSharp
+        m_MethodName: CalledEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

@@ -27,4 +27,7 @@ namespace Vars
 
     [Serializable]
     public class FloatRef : BaseRef<float> { }
+    
+    [Serializable]
+    public class IntRef : BaseRef<int> { }
 }

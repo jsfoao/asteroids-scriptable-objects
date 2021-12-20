@@ -28,9 +28,6 @@ namespace ScriptableEvents.Event
         }
     }
 
-    [CreateAssetMenu(fileName = "Scriptable Event", menuName = "Scriptable Object/Scriptable Event", order = 0)]
-    public class ScriptableEvent : ScriptableEventBase { }
-
     /// <summary>
     /// Action: Encapsulates a method that has a single parameter and does not return a value.
     /// For health for example, we want to pass in int/float data
