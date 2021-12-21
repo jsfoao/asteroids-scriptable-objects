@@ -4,6 +4,7 @@ public class ObjectSpawner : MonoBehaviour
 {
     [SerializeField] private float range;
 
+    // TODO finish spawn on random position method
     private void SpawnRandomPos()
     {
         
