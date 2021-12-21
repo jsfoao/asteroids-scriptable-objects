@@ -32,7 +32,7 @@ public class MySerializer : MonoBehaviour
         JsonUtility.FromJsonOverwrite(savedJson, newElement);
         
         // AssetDatabase.Contains()
-        var path = "Assets/_Game/Test_Elements/Elements/ElementFromDisk.asset";
+        // var path = "Assets/_Game/Test_Elements/Elements/ElementFromDisk.asset";
         // var asset = AssetDatabase.LoadAssetAtPath(savedJson, newElement);
 
     }

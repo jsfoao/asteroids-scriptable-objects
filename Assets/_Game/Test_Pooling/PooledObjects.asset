@@ -9,6 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19a61879a4b54549a4a4bf2d9eb9cb8c, type: 3}
-  m_Name: OnClickEvent
+  m_Script: {fileID: 11500000, guid: fd2ea58869104a1a96a2c80d9f89a149, type: 3}
+  m_Name: PooledObjects
   m_EditorClassIdentifier: 
+  Items: []

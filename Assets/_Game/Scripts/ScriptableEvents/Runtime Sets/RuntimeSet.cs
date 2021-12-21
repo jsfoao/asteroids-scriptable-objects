@@ -1,10 +1,12 @@
-using System;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public abstract class RuntimeSet<T> : ScriptableObject
 {
     public List<T> Items = new List<T>();
+    public int Count => Items.Count;
+    public T Last => Items[Items.Count - 1];
 
     public void Add(T t)
     {
