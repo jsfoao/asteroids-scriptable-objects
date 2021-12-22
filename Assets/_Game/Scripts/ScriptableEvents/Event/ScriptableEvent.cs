@@ -2,6 +2,6 @@
 
 namespace ScriptableEvents.Event
 {
-    [CreateAssetMenu(fileName = "Scriptable Event", menuName = "Scriptable Object/Scriptable Event", order = 0)]
+    [CreateAssetMenu(menuName = "Scriptable Event/NoPayload", fileName = "ScriptableEvent", order = 0)]
     public class ScriptableEvent : ScriptableEventBase { }
 }

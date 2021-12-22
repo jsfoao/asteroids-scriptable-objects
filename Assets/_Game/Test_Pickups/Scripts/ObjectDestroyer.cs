@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class ObjectDestroyer : MonoBehaviour
 {
-    [SerializeField] private RuntimeSetPickups runtimeSetPickups;
+    [SerializeField] private RuntimeSetPickup runtimeSetPickup;
 
     public void DestroyPickup(Pickup pickup)
     {
-        runtimeSetPickups.Remove(pickup);
+        runtimeSetPickup.Remove(pickup);
         Destroy(pickup.gameObject);
     }
 }

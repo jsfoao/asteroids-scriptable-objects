@@ -415,6 +415,7 @@ GameObject:
   - component: {fileID: 7101966235372498891}
   - component: {fileID: 7101966235372498890}
   - component: {fileID: 7101966235372498889}
+  - component: {fileID: 3042204334098779776}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -461,6 +462,7 @@ MonoBehaviour:
   _scoreText: {fileID: 7101966235281579915}
   _timerText: {fileID: 7101966234334493684}
   _laserText: {fileID: 7101966235362614044}
+  health: {fileID: 11400000, guid: 807972cd2c0b12e46bc1f46649386874, type: 2}
 --- !u!223 &7101966235372498891
 Canvas:
   m_ObjectHideFlags: 0
@@ -522,6 +524,38 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3042204334098779776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7101966235372498888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9f42e8f3d8e4faeb283bfd27fdff1ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventNoPayload: {fileID: 0}
+  _responseNoPayload:
+    m_PersistentCalls:
+      m_Calls: []
+  _event: {fileID: 11400000, guid: 31b45e6fa1537f749b8db308920700bc, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8597208082757243919}
+        m_TargetAssemblyTypeName: UI.UI, Assembly-CSharp
+        m_MethodName: UpdateHealthText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7101966235834179330
 GameObject:
   m_ObjectHideFlags: 0

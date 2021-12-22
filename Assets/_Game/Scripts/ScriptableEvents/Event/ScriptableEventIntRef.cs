@@ -3,6 +3,6 @@ using Vars;
 
 namespace ScriptableEvents.Event
 {
-    [CreateAssetMenu(fileName = "Scriptable Event IntRef", menuName = "Scriptable Object/Scriptable Event IntRef")]
+    [CreateAssetMenu(menuName = "Scriptable Event/IntRef", fileName = "ScriptableEventIntRef", order = 0)]
     public class ScriptableEventIntRef : ScriptableEventBase<IntRef> { }
 }

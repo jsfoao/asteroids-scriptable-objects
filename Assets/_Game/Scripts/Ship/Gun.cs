@@ -1,4 +1,4 @@
-using System;
+using ScriptableEvents.Event;
 using UnityEngine;
 
 namespace Ship
@@ -6,14 +6,17 @@ namespace Ship
     public class Gun : MonoBehaviour
     {
         [SerializeField] private Laser _laserPrefab;
+        [SerializeField] private ScriptableEvent onShootEvent;
 
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Space))
-                Shoot();
+            {
+                onShootEvent.Raise();
+            }
         }
         
-        private void Shoot()
+        public void Shoot()
         {
             var trans = transform;
             Instantiate(_laserPrefab, trans.position, trans.rotation);

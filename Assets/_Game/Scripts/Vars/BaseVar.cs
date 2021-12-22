@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Vars
@@ -23,7 +22,4 @@ namespace Vars
             _currentValue = _value;
         }
     }
-    
-    [CreateAssetMenu(fileName = "new FloatVar", menuName = "Scriptable Object/Float Variable")]
-    public class FloatVar : BaseVar<float> { }
 }

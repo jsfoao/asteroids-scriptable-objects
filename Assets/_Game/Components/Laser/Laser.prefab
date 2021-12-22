@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5567069101288871489}
   - component: {fileID: 5567069101288871488}
   - component: {fileID: 5567069101288871500}
+  - component: {fileID: 2636496418585794806}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -45,8 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfdadedd8a48f2f498bcc3362c739143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onHitAsteroid: {fileID: 11400000, guid: 9d4a24facfab3ed45b15d6903817f0df, type: 2}
   _speed: 0.2
-  _maxLifetime: 3
 --- !u!50 &5567069101288871500
 Rigidbody2D:
   serializedVersion: 4
@@ -68,6 +69,38 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2636496418585794806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5567069101288871502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad696e9a18f64bb49fa8c107d0750eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventNoPayload: {fileID: 0}
+  _responseNoPayload:
+    m_PersistentCalls:
+      m_Calls: []
+  _event: {fileID: 11400000, guid: 9d4a24facfab3ed45b15d6903817f0df, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5567069101288871488}
+        m_TargetAssemblyTypeName: Ship.Laser, Assembly-CSharp
+        m_MethodName: Destroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8433375001349643316
 GameObject:
   m_ObjectHideFlags: 0

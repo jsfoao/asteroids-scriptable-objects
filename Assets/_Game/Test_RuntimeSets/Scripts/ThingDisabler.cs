@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 public class ThingDisabler : MonoBehaviour
 {
     [SerializeField] private ScriptableEvent disableEvent;
-    [SerializeField] private RuntimeSetThings runtimeSet;
+    [SerializeField] private RuntimeSetThing runtimeSet;
     
     private void Update()
     {

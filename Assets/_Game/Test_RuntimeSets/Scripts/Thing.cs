@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Thing : MonoBehaviour
 {
-    [SerializeField] private RuntimeSetThings runtimeSet;
+    [SerializeField] private RuntimeSetThing runtimeSet;
 
     private void Start()
     {

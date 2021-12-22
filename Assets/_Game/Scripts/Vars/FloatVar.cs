@@ -1,5 +1,5 @@
 using UnityEngine;
 using Vars;
 
-[CreateAssetMenu(fileName = "new FloatVar", menuName = "Scriptable Object/Float Variable")]
+[CreateAssetMenu(menuName = "Scriptable Variable/Float", fileName = "ScriptableVariableFloat", order = 0)]
 public class FloatVar : BaseVar<float> { }

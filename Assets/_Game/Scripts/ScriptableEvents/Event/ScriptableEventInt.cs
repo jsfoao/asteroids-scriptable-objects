@@ -2,6 +2,6 @@
 
 namespace ScriptableEvents.Event
 {
-    [CreateAssetMenu(fileName = "Scriptable Event Int", menuName = "Scriptable Object/Scriptable Event Int")]
+    [CreateAssetMenu(menuName = "Scriptable Event/Int", fileName = "ScriptableEventInt", order = 0)]
     public class ScriptableEventInt : ScriptableEventBase<int> { }
 }

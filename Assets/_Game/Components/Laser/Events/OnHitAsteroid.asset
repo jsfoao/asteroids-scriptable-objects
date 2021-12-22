@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68302ebd8e8615444872275ecf118371, type: 3}
-  m_Name: NoPayloadEvent
+  m_Script: {fileID: 11500000, guid: d8e782891dff4bd391dd1476e53a5a61, type: 3}
+  m_Name: OnHitAsteroid
   m_EditorClassIdentifier: 

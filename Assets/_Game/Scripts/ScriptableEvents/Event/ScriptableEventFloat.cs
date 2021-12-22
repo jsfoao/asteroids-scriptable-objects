@@ -2,6 +2,6 @@ using UnityEngine;
 
 namespace ScriptableEvents.Event
 {
-    [CreateAssetMenu(fileName = "Scriptable Event Float", menuName = "Scriptable Object/Scriptable Event Float")]
+    [CreateAssetMenu(menuName = "Scriptable Event/Float", fileName = "ScriptableEventFloat", order = 0)]
     public class ScriptableEventFloat : ScriptableEventBase<float> { }
 }

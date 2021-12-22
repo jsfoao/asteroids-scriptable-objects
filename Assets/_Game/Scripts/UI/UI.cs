@@ -1,5 +1,7 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
+using Vars;
 
 namespace UI
 {
@@ -9,25 +11,20 @@ namespace UI
         [SerializeField] private TextMeshProUGUI _scoreText;
         [SerializeField] private TextMeshProUGUI _timerText;
         [SerializeField] private TextMeshProUGUI _laserText;
+        
+        [Header("Variable References")]
+        [SerializeField] private IntVar health;
 
-        private void SetHealthText(string text)
-        {
-            _healthText.text = text;
-        }
         
-        private void SetScoreText(string text)
+
+        public void UpdateHealthText()
         {
-            _scoreText.text = text;
+            _healthText.text = $"Health: {health.Value}";
         }
-        
-        private void SetTimerText(string text)
+
+        private void Start()
         {
-            _timerText.text = text;
-        }
-        
-        private void SetLaserText(string text)
-        {
-            _laserText.text = text;
+            UpdateHealthText();
         }
     }
 }

@@ -9,8 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1784223117350305365}
-  - component: {fileID: 1784223117350305363}
   - component: {fileID: 1784223117350305362}
+  - component: {fileID: 1784223117350305363}
+  - component: {fileID: -2011040406029014358}
+  - component: {fileID: -8439625000244889158}
   m_Layer: 0
   m_Name: Asteroid
   m_TagString: Asteroid
@@ -33,25 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1784223117350305363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1784223117350305384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 017c14a0b2ceaec4191b684dfd17404f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _minForce: 2
-  _maxForce: 6
-  _minSize: 0.2
-  _maxSize: 1
-  _minTorque: 0.1
-  _maxTorque: 0.5
-  _shape: {fileID: 1524412162417054026}
 --- !u!50 &1784223117350305362
 Rigidbody2D:
   serializedVersion: 4
@@ -73,6 +56,75 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1784223117350305363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784223117350305384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017c14a0b2ceaec4191b684dfd17404f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Size: 0
+  _minForce: 2
+  _maxForce: 6
+  _minSize: 0.2
+  _maxSize: 1
+  _minTorque: 0.1
+  _maxTorque: 0.5
+  _shape: {fileID: 1524412162417054026}
+--- !u!114 &-2011040406029014358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784223117350305384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a25d5a137262c44a883038e308bf801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroid: {fileID: 1784223117350305363}
+  asteroidPrefab: {fileID: 1784223117350305363}
+  minDivision: 2
+  maxDivision: 3
+  minSize: 0.2
+--- !u!114 &-8439625000244889158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784223117350305384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad696e9a18f64bb49fa8c107d0750eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventNoPayload: {fileID: 0}
+  _responseNoPayload:
+    m_PersistentCalls:
+      m_Calls: []
+  _event: {fileID: 11400000, guid: 9d4a24facfab3ed45b15d6903817f0df, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -2011040406029014358}
+        m_TargetAssemblyTypeName: AsteroidSplit, Assembly-CSharp
+        m_MethodName: Split
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7041230333510869417
 GameObject:
   m_ObjectHideFlags: 0

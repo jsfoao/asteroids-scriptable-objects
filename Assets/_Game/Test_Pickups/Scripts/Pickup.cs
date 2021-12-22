@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    [SerializeField] private RuntimeSetPickups runtimeSetPickups;
+    [SerializeField] private RuntimeSetPickup runtimeSetPickup;
     
     
     private void OnEnable()
     {
-        runtimeSetPickups.Add(this);
+        runtimeSetPickup.Add(this);
     }
 }

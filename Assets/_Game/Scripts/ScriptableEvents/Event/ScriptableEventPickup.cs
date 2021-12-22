@@ -2,6 +2,6 @@
 
 namespace ScriptableEvents.Event
 {
-    [CreateAssetMenu(fileName = "Scriptable Event Pickup", menuName = "Scriptable Object/Scriptable Event Pickup")]
+    [CreateAssetMenu(menuName = "Scriptable Event/Pickup", fileName = "ScriptableEventPickup", order = 0)]
     public class ScriptableEventPickup : ScriptableEventBase<Pickup> { }
 }
