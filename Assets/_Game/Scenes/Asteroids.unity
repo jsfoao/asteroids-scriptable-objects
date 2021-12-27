@@ -217,85 +217,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1335150408
+--- !u!1 &1335150408 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8542955563881697315, guid: 01e0be4b6a8709048a64c13d0b0218e1, type: 3}
+  m_PrefabInstance: {fileID: 8542955565046388587}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1335150409}
-  - component: {fileID: 1335150411}
-  - component: {fileID: 1335150410}
-  m_Layer: 0
-  m_Name: LootSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1335150409
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335150408}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3035848, y: -1.2863054, z: -0.7896939}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1335150410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335150408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a86eb4ed64f44233a27659316214e171, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  debug: 1
-  _eventNoPayload: {fileID: 0}
-  _responseNoPayload:
-    m_PersistentCalls:
-      m_Calls: []
-  _event: {fileID: 11400000, guid: 0818a551bfd8e81419254527e8b4d8a7, type: 2}
-  _response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1335150411}
-        m_TargetAssemblyTypeName: LootSpawner, Assembly-CSharp
-        m_MethodName: DropLoot
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1335150411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335150408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 761800c6ae4b433499ca358f89b82248, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lootPrefab: {fileID: 3666705683165849783, guid: 79d13333c87f1bb498ca5f2b4fe5b2f6, type: 3}
-  lootChance: 0.34
 --- !u!1 &1867257715
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +368,18 @@ PrefabInstance:
     - target: {fileID: 2970632031999273639, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
       value: 1.2715299
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970632033307266020, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
+      propertyPath: shotgunMode.variable
+      value: 
+      objectReference: {fileID: 11400000, guid: ba4a399f94f57df4a99cb630f5886a18, type: 2}
+    - target: {fileID: 2970632033307266020, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
+      propertyPath: shotgunMode.simpleValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970632033307266020, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
+      propertyPath: shotgunMode.useSimpleValue
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7228559663408703606, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
       propertyPath: debug
@@ -658,3 +596,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c71243f12cdfc2a4282f1805a6098327, type: 3}
+--- !u!1001 &8542955565046388587
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8542955563881697314, guid: 01e0be4b6a8709048a64c13d0b0218e1, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542955563881697314, guid: 01e0be4b6a8709048a64c13d0b0218e1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.3035848
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542955563881697314, guid: 01e0be4b6a8709048a64c13d0b0218e1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.2863054
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542955563881697314, guid: 01e0be4b6a8709048a64c13d0b0218e1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.7896939
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542955563881697314, guid: 01e0be4b6a8709048a64c13d0b0218e1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542955563881697314, guid: 01e0be4b6a8709048a64c13d0b0218e1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542955563881697314, guid: 01e0be4b6a8709048a64c13d0b0218e1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542955563881697314, guid: 01e0be4b6a8709048a64c13d0b0218e1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542955563881697314, guid: 01e0be4b6a8709048a64c13d0b0218e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542955563881697314, guid: 01e0be4b6a8709048a64c13d0b0218e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542955563881697314, guid: 01e0be4b6a8709048a64c13d0b0218e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542955563881697315, guid: 01e0be4b6a8709048a64c13d0b0218e1, type: 3}
+      propertyPath: m_Name
+      value: LootSpawner
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 01e0be4b6a8709048a64c13d0b0218e1, type: 3}

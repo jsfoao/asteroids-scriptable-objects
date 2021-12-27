@@ -30,4 +30,7 @@ namespace Vars
     
     [Serializable]
     public class IntRef : BaseRef<int> { }
+    
+    [Serializable]
+    public class BoolRef : BaseRef<bool> { }
 }

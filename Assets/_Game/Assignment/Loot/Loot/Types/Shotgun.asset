@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6281167a58b2e75448fe6e6883c2b25f, type: 3}
-  m_Name: Throttle
+  m_Name: Shotgun
   m_EditorClassIdentifier: 
   throttle: {fileID: 11400000, guid: cd06b969cd4f5e4479ed351d52d2c0b2, type: 2}
   rotation: {fileID: 11400000, guid: fd77bb36c2787df41ba223d21d82640c, type: 2}
   health: {fileID: 11400000, guid: 807972cd2c0b12e46bc1f46649386874, type: 2}
-  throttleEffect: 2
+  shotgunMode: {fileID: 11400000, guid: ba4a399f94f57df4a99cb630f5886a18, type: 2}
+  throttleEffect: 0
   rotationEffect: 0
   healthEffect: 0
+  shootEffect: 1

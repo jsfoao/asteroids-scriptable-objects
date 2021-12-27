@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: -505673230461655859, guid: f194730ef93a8bd4a9a384f8a5f7a8cf, type: 3}
       propertyPath: lootType
       value: 
-      objectReference: {fileID: 11400000, guid: 73a03c9f2916d2c4d81c1ce1e5798f03, type: 2}
+      objectReference: {fileID: 11400000, guid: e4b55e21fbb783a48bf0559d427a1a4a, type: 2}
     - target: {fileID: 3567710061489109394, guid: f194730ef93a8bd4a9a384f8a5f7a8cf, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -55,9 +55,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3567710061489109396, guid: f194730ef93a8bd4a9a384f8a5f7a8cf, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567710061489109397, guid: f194730ef93a8bd4a9a384f8a5f7a8cf, type: 3}
+      propertyPath: m_Color.b
+      value: 0.47658122
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567710061489109397, guid: f194730ef93a8bd4a9a384f8a5f7a8cf, type: 3}
+      propertyPath: m_Color.g
+      value: 0.43137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567710061489109397, guid: f194730ef93a8bd4a9a384f8a5f7a8cf, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7921569
+      objectReference: {fileID: 0}
     - target: {fileID: 3567710061489109399, guid: f194730ef93a8bd4a9a384f8a5f7a8cf, type: 3}
       propertyPath: m_Name
-      value: Throttle
+      value: Rotation
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 671305240494820319, guid: f194730ef93a8bd4a9a384f8a5f7a8cf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f194730ef93a8bd4a9a384f8a5f7a8cf, type: 3}
