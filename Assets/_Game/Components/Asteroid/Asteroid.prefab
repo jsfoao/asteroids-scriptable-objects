@@ -76,6 +76,7 @@ MonoBehaviour:
   _minTorque: 0.1
   _maxTorque: 0.5
   _shape: {fileID: 1524412162417054026}
+  onDestroyAsteroid: {fileID: 11400000, guid: 0818a551bfd8e81419254527e8b4d8a7, type: 2}
   _runtimeSetAsteroids: {fileID: 11400000, guid: 1009788b12fb1984d89cd5c1f05b29a5, type: 2}
 --- !u!114 &-2011040406029014358
 MonoBehaviour:
@@ -89,7 +90,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a25d5a137262c44a883038e308bf801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroid: {fileID: 1784223117350305363}
   asteroidPrefab: {fileID: 1784223117350305363}
   minSize: 0.5
   divisionMultiplier: 3
@@ -105,6 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad696e9a18f64bb49fa8c107d0750eaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
   _eventNoPayload: {fileID: 0}
   _responseNoPayload:
     m_PersistentCalls:

@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onCollisionAsteroid: {fileID: 11400000, guid: 31b45e6fa1537f749b8db308920700bc, type: 2}
+  onCollisionLoot: {fileID: 11400000, guid: 5393310a526684c42ba457487cc87145, type: 2}
   asteroidDamage: {fileID: 11400000, guid: 6adb050ff63285047a6ace28fbb6067d, type: 2}
 --- !u!114 &7228559663408703606
 MonoBehaviour:

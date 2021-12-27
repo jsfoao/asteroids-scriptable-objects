@@ -22,7 +22,7 @@ public class AsteroidSplit : MonoBehaviour
 
         if (_asteroid.Size <= minSize)
         {
-            Destroy(gameObject);
+            _asteroid.Destroy(id);
             return;
         }
 
@@ -35,7 +35,7 @@ public class AsteroidSplit : MonoBehaviour
             var asteroid = Instantiate(asteroidPrefab, transform.position, Quaternion.identity);
             asteroid.SetSize(newSize);
         }
-        Destroy(gameObject);
+        _asteroid.Destroy(id);
     }
 
     private void Start()
