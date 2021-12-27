@@ -1,5 +1,6 @@
 using System;
 using System.Runtime.CompilerServices;
+using ScriptableEvents.Runtime_Sets;
 using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -21,6 +22,7 @@ namespace Asteroids
 
         [Header("References:")]
         [SerializeField] private Transform _shape;
+        [SerializeField] private RuntimeSetAsteroids _runtimeSetAsteroids;
 
         private Rigidbody2D _rigidbody;
         private Vector3 _direction;
@@ -30,25 +32,22 @@ namespace Asteroids
         {
             ID = Guid.NewGuid();
             _rigidbody = GetComponent<Rigidbody2D>();
+            _runtimeSetAsteroids.Add(this);
         }
 
-        public void SetRandom()
+        private void Start()
         {
-            SetRandomDirection();
-            AddRandomForce();
-            AddRandomTorque();
-            SetRandomSize();
+            SetPhysics();
         }
 
-        public void Set(float size, Vector3 direction)
-        { 
-            SetSize(size);
-            SetDirection(direction);
-            AddRandomForce();
+        public void SetPhysics()
+        {
+            SetDirection();
+            AddForce();
+            AddTorque();
         }
 
-        #region Random
-        private void SetRandomDirection()
+        private void SetDirection()
         {
             var size = new Vector2(3f, 3f);
             var target = new Vector3
@@ -60,13 +59,13 @@ namespace Asteroids
             _direction = (target - transform.position).normalized;
         }
 
-        private void AddRandomForce()
+        private void AddForce()
         {
             var force = Random.Range(_minForce, _maxForce);
             _rigidbody.AddForce( _direction * force, ForceMode2D.Impulse);
         }
 
-        private void AddRandomTorque()
+        private void AddTorque()
         {
             var torque = Random.Range(_minTorque, _maxTorque);
             var roll = Random.Range(0, 2);
@@ -77,22 +76,16 @@ namespace Asteroids
             _rigidbody.AddTorque(torque, ForceMode2D.Impulse);
         }
 
-        private void SetRandomSize()
+        public void SetRandomSize()
         {
             Size = Random.Range(_minSize, _maxSize);
             _shape.localScale = new Vector3(Size, Size, 0f);
         }
-        #endregion
 
-        private void SetSize(float size)
+        public void SetSize(float size)
         {
             Size = size;
             _shape.localScale = new Vector3(Size, Size, 0f);
-        }
-
-        private void SetDirection(Vector3 direction)
-        {
-            _direction = direction;
         }
 
         public void Destroy(Guid id)
@@ -101,6 +94,11 @@ namespace Asteroids
             {
                 Destroy(gameObject);
             }
+        }
+
+        public void OnDestroy()
+        {
+            _runtimeSetAsteroids.Remove(this);
         }
     }
 }

@@ -76,6 +76,7 @@ MonoBehaviour:
   _minTorque: 0.1
   _maxTorque: 0.5
   _shape: {fileID: 1524412162417054026}
+  _runtimeSetAsteroids: {fileID: 11400000, guid: 1009788b12fb1984d89cd5c1f05b29a5, type: 2}
 --- !u!114 &-2011040406029014358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,9 +91,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asteroid: {fileID: 1784223117350305363}
   asteroidPrefab: {fileID: 1784223117350305363}
-  minDivision: 2
-  maxDivision: 3
-  minSize: 0.2
+  minSize: 0.5
+  divisionMultiplier: 3
 --- !u!114 &-8439625000244889158
 MonoBehaviour:
   m_ObjectHideFlags: 0

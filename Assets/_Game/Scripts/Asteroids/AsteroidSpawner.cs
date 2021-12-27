@@ -67,7 +67,7 @@ namespace Asteroids
                 var location = GetSpawnLocation();
                 var position = GetStartPosition(location);
                 var asteroid = Instantiate(_asteroidPrefab, position, Quaternion.identity);
-                asteroid.SetRandom();
+                asteroid.SetRandomSize();
             }
         }
 
