@@ -102,8 +102,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27ca54af3d6ff174994b183b53e8dc92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _throttlePower: 7
-  _rotationPower: 3
+  _throttlePower:
+    useSimpleValue: 0
+    variable: {fileID: 11400000, guid: cd06b969cd4f5e4479ed351d52d2c0b2, type: 2}
+    simpleValue: 0
+  _rotationPower:
+    useSimpleValue: 0
+    variable: {fileID: 11400000, guid: fd77bb36c2787df41ba223d21d82640c, type: 2}
+    simpleValue: 0
 --- !u!114 &2970632031999273633
 MonoBehaviour:
   m_ObjectHideFlags: 0

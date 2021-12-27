@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd2ea58869104a1a96a2c80d9f89a149, type: 3}
-  m_Name: PooledObjects
+  m_Script: {fileID: 11500000, guid: 9ece07eb8f13c8b44b0f212bf1edccfc, type: 3}
+  m_Name: Throttle
   m_EditorClassIdentifier: 
-  Items: []
+  _value: 7
+  _currentValue: 0
+  developerDescription: 

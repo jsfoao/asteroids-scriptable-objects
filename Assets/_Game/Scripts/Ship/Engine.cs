@@ -1,12 +1,13 @@
 using UnityEngine;
+using Vars;
 
 namespace Ship
 {
     [RequireComponent(typeof(Rigidbody2D))]
     public class Engine : MonoBehaviour
     {
-        [SerializeField] private float _throttlePower = 7f;
-        [SerializeField] private float _rotationPower = 3f;
+        [SerializeField] private FloatRef _throttlePower;
+        [SerializeField] private FloatRef _rotationPower;
         
         private Rigidbody2D _rigidbody;
         
@@ -34,17 +35,17 @@ namespace Ship
     
         public void Throttle()
         {
-            _rigidbody.AddForce(transform.up * _throttlePower, ForceMode2D.Force);
+            _rigidbody.AddForce(transform.up * _throttlePower.Value, ForceMode2D.Force);
         }
 
         public void SteerLeft()
         {
-            _rigidbody.AddTorque(_rotationPower, ForceMode2D.Force);
+            _rigidbody.AddTorque(_rotationPower.Value, ForceMode2D.Force);
         }
 
         public void SteerRight()
         {
-            _rigidbody.AddTorque(-_rotationPower, ForceMode2D.Force);
+            _rigidbody.AddTorque(-_rotationPower.Value, ForceMode2D.Force);
         }
     }
 }
