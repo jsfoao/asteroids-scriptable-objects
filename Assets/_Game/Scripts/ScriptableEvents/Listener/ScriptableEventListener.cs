@@ -6,12 +6,15 @@ namespace ScriptableEvents.Listener
 {
     public class ScriptableEventListener : MonoBehaviour
     {
+        [SerializeField] protected bool debug;
         [SerializeField] private ScriptableEvent _eventNoPayload;
         [SerializeField] private UnityEvent _responseNoPayload;
 
         private void OnEventRaised()
         {
             _responseNoPayload.Invoke();
+
+            if (debug) { DebugEvent(); }
         }
 
         private void OnEnable()
@@ -23,6 +26,12 @@ namespace ScriptableEvents.Listener
         {
             _eventNoPayload.Unregister(OnEventRaised);
         }
+
+        private void DebugEvent()
+        {
+            Debug.Log($"Raised: {_eventNoPayload.name}");
+            Debug.Log($"Data: None");
+        }
     }
     
     public abstract class ScriptableEventListener<TPayload> : ScriptableEventListener
@@ -33,6 +42,8 @@ namespace ScriptableEvents.Listener
         private void OnEventRaised(TPayload payload)
         {
             _response.Invoke(payload);
+
+            if (debug) { DebugEvent(payload); }
         }
 
         public void OnEnable()
@@ -43,6 +54,12 @@ namespace ScriptableEvents.Listener
         private void OnDisable()
         {
             _event.Unregister(OnEventRaised);
+        }
+
+        private void DebugEvent(TPayload payload)
+        {
+            Debug.Log($"Raised: {_event.name}");
+            Debug.Log($"Data: {payload}");
         }
     }
 }

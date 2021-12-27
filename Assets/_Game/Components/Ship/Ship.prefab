@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 2970632031999273633}
   - component: {fileID: 7228559663408703606}
   - component: {fileID: 8414792097369639677}
+  - component: {fileID: 8753470437143577727}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -136,6 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380f82266a684a2398ec5e9f7c718cf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
   _eventNoPayload: {fileID: 11400000, guid: 3475766416d928b4d812217d29fc9a35, type: 2}
   _responseNoPayload:
     m_PersistentCalls:
@@ -164,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9f42e8f3d8e4faeb283bfd27fdff1ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 1
   _eventNoPayload: {fileID: 0}
   _responseNoPayload:
     m_PersistentCalls:
@@ -187,6 +190,35 @@ MonoBehaviour:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UI.UI, Assembly-CSharp
         m_MethodName: UpdateHealthText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8753470437143577727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2970632031999273636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380f82266a684a2398ec5e9f7c718cf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debug: 1
+  _eventNoPayload: {fileID: 11400000, guid: 64d7ebc34635c1b4d9ccd7c87a6f509a, type: 2}
+  _responseNoPayload:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2970632031999273633}
+        m_TargetAssemblyTypeName: Ship.Hull, Assembly-CSharp
+        m_MethodName: DestroyShip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -399,3 +431,4 @@ MonoBehaviour:
     useSimpleValue: 0
     variable: {fileID: 11400000, guid: 807972cd2c0b12e46bc1f46649386874, type: 2}
     simpleValue: 0
+  onDeathEvent: {fileID: 11400000, guid: 64d7ebc34635c1b4d9ccd7c87a6f509a, type: 2}

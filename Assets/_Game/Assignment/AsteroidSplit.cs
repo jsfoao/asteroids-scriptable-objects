@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 public class AsteroidSplit : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private Asteroid asteroid;
+    private Asteroid _asteroid;
     [SerializeField] private Asteroid asteroidPrefab;
     
     [Header("Split Settings")]
@@ -18,16 +18,16 @@ public class AsteroidSplit : MonoBehaviour
 
     public void Split(Guid id)
     {
-        if (asteroid.ID != id) { return; }
+        if (_asteroid.ID != id) { return; }
 
-        if (asteroid.Size <= minSize)
+        if (_asteroid.Size <= minSize)
         {
             Destroy(gameObject);
             return;
         }
 
-        int divisions = Mathf.RoundToInt(asteroid.Size * divisionMultiplier);
-        float baseSize = asteroid.Size / divisions;
+        int divisions = Mathf.RoundToInt(_asteroid.Size * divisionMultiplier);
+        float baseSize = _asteroid.Size / divisions;
 
         for (int i = 0; i < divisions; i++)
         {
@@ -36,5 +36,10 @@ public class AsteroidSplit : MonoBehaviour
             asteroid.SetSize(newSize);
         }
         Destroy(gameObject);
+    }
+
+    private void Start()
+    {
+        _asteroid = GetComponent<Asteroid>();
     }
 }

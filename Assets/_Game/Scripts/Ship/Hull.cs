@@ -16,5 +16,10 @@ namespace Ship
                onCollisionAsteroid.Raise(asteroidDamage.Value);
             }
         }
+
+        public void DestroyShip()
+        {
+            Destroy(gameObject);
+        }
     }
 }
