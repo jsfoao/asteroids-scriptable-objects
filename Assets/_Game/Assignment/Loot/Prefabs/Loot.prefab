@@ -138,6 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lootType: {fileID: 0}
   runtimeSetLoot: {fileID: 11400000, guid: 1033bfbd802d5b943a6f373aa8e57bd4, type: 2}
+  ui: {fileID: 8597208082757243919, guid: c71243f12cdfc2a4282f1805a6098327, type: 3}
 --- !u!114 &8020956619575838983
 MonoBehaviour:
   m_ObjectHideFlags: 0

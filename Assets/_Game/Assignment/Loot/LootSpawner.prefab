@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8542955563881697314}
   - component: {fileID: 8542955563881697312}
   - component: {fileID: 8542955563881697313}
+  - component: {fileID: 176377958188439562}
   m_Layer: 0
   m_Name: LootSpawner
   m_TagString: Untagged
@@ -75,6 +76,39 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: LootSpawner, Assembly-CSharp
         m_MethodName: DropLoot
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &176377958188439562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8542955563881697315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad696e9a18f64bb49fa8c107d0750eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debug: 0
+  _eventNoPayload: {fileID: 0}
+  _responseNoPayload:
+    m_PersistentCalls:
+      m_Calls: []
+  _event: {fileID: 11400000, guid: 5393310a526684c42ba457487cc87145, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UI.UI, Assembly-CSharp
+        m_MethodName: UpdateText
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

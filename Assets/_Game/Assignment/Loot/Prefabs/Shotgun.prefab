@@ -73,7 +73,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3567710061489109399, guid: f194730ef93a8bd4a9a384f8a5f7a8cf, type: 3}
       propertyPath: m_Name
-      value: Rotation
+      value: Shotgun
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 671305240494820319, guid: f194730ef93a8bd4a9a384f8a5f7a8cf, type: 3}

@@ -13,17 +13,30 @@ namespace UI
         
         [Header("Variable References")]
         [SerializeField] private IntVar health;
-
+        [SerializeField] private IntVar score;
+        [SerializeField] private IntVar lasers;
         
-
+        
         public void UpdateHealthText()
         {
             _healthText.text = $"Health: {health.Value}";
+        }
+        
+        public void UpdateScoreText()
+        {
+            _healthText.text = $"Score: {score.Value}";
+        }
+        
+        public void UpdateLasersText()
+        {
+            _healthText.text = $"Health: {lasers.Value}";
         }
 
         private void Start()
         {
             UpdateHealthText();
+            UpdateScoreText();
+            UpdateLasersText();
         }
     }
 }

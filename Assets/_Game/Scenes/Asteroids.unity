@@ -281,10 +281,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Event_Listener
       objectReference: {fileID: 0}
-    - target: {fileID: 2970632031999273633, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
-      propertyPath: onCollisionLoot
-      value: 
-      objectReference: {fileID: 11400000, guid: 5393310a526684c42ba457487cc87145, type: 2}
     - target: {fileID: 2970632031999273636, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
       propertyPath: m_Icon
       value: 
@@ -486,34 +482,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3042204334098779776, guid: c71243f12cdfc2a4282f1805a6098327, type: 3}
-      propertyPath: _response.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3042204334098779776, guid: c71243f12cdfc2a4282f1805a6098327, type: 3}
-      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3042204334098779776, guid: c71243f12cdfc2a4282f1805a6098327, type: 3}
-      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 495811267}
-    - target: {fileID: 3042204334098779776, guid: c71243f12cdfc2a4282f1805a6098327, type: 3}
-      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3042204334098779776, guid: c71243f12cdfc2a4282f1805a6098327, type: 3}
-      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UpdateHealthText
-      objectReference: {fileID: 0}
-    - target: {fileID: 3042204334098779776, guid: c71243f12cdfc2a4282f1805a6098327, type: 3}
-      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UI.UI, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3042204334098779776, guid: c71243f12cdfc2a4282f1805a6098327, type: 3}
-      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 7101966235372498888, guid: c71243f12cdfc2a4282f1805a6098327, type: 3}
       propertyPath: m_Name
       value: UI
@@ -611,6 +579,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 176377958188439562, guid: 01e0be4b6a8709048a64c13d0b0218e1, type: 3}
+      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 495811267}
     - target: {fileID: 8542955563881697314, guid: 01e0be4b6a8709048a64c13d0b0218e1, type: 3}
       propertyPath: m_RootOrder
       value: 2
