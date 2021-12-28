@@ -462,6 +462,8 @@ MonoBehaviour:
   _timerText: {fileID: 7101966234334493684}
   _laserText: {fileID: 7101966235362614044}
   health: {fileID: 11400000, guid: 807972cd2c0b12e46bc1f46649386874, type: 2}
+  score: {fileID: 11400000, guid: 267fb72fc054d9644b321051893329bf, type: 2}
+  lasers: {fileID: 11400000, guid: 2c0785dacf35df945bd5c71db0e4ff25, type: 2}
 --- !u!223 &7101966235372498891
 Canvas:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using System;
 using ScriptableEvents.Event;
 using ScriptableEvents.Runtime_Sets;
 using UnityEngine;
+using Vars;
 using Random = UnityEngine.Random;
 
 namespace Asteroids
@@ -23,6 +24,7 @@ namespace Asteroids
         [SerializeField] private Transform _shape;
         [SerializeField] private ScriptableEventVector3 onDestroyAsteroid;
         [SerializeField] private RuntimeSetAsteroids _runtimeSetAsteroids;
+        [SerializeField] private IntVar score;
 
         private Rigidbody2D _rigidbody;
         private Vector3 _direction;
@@ -93,6 +95,7 @@ namespace Asteroids
             if (id == ID)
             {
                 onDestroyAsteroid.Raise(transform.position);
+                score.Set(score.Value + 1);
                 Destroy(gameObject);
                 _runtimeSetAsteroids.Remove(this);
             }

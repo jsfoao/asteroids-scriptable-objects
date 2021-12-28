@@ -24,12 +24,12 @@ namespace UI
         
         public void UpdateScoreText()
         {
-            _healthText.text = $"Score: {score.Value}";
+            _scoreText.text = $"Score: {score.Value}";
         }
         
         public void UpdateLasersText()
         {
-            _healthText.text = $"Health: {lasers.Value}";
+            _laserText.text = $"Lasers Shot: {lasers.Value}";
         }
 
         private void Start()

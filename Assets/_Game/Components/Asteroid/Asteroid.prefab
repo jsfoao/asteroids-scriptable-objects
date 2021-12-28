@@ -78,6 +78,7 @@ MonoBehaviour:
   _shape: {fileID: 1524412162417054026}
   onDestroyAsteroid: {fileID: 11400000, guid: 0818a551bfd8e81419254527e8b4d8a7, type: 2}
   _runtimeSetAsteroids: {fileID: 11400000, guid: 1009788b12fb1984d89cd5c1f05b29a5, type: 2}
+  score: {fileID: 11400000, guid: 267fb72fc054d9644b321051893329bf, type: 2}
 --- !u!114 &-2011040406029014358
 MonoBehaviour:
   m_ObjectHideFlags: 0

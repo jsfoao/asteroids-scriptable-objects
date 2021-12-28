@@ -9,6 +9,7 @@ namespace Ship
         [SerializeField] private Laser _laserPrefab;
         [SerializeField] private ScriptableEvent onShootEvent;
         [SerializeField] public BoolRef shotgunMode;
+        [SerializeField] public IntVar lasersShot;
 
         private void Update()
         {
@@ -22,10 +23,12 @@ namespace Ship
         {
             var trans = transform;
             Instantiate(_laserPrefab, trans.position, trans.rotation);
-
+            lasersShot.Set(lasersShot.Value + 1);
+            
             if (!shotgunMode.Value) return;
             Instantiate(_laserPrefab, trans.position, trans.rotation * Quaternion.Euler(0, 0, 45));
             Instantiate(_laserPrefab, trans.position, trans.rotation * Quaternion.Euler(0, 0, -45));
+            lasersShot.Set(lasersShot.Value + 2);
         }
     }
 }
