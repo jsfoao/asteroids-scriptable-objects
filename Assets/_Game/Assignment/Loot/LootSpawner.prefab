@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a86eb4ed64f44233a27659316214e171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debug: 1
+  debug: 0
   _eventNoPayload: {fileID: 0}
   _responseNoPayload:
     m_PersistentCalls:

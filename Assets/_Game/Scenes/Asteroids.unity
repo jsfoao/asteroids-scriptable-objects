@@ -414,6 +414,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8414792097369639677, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8414792097369639677, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
       propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
@@ -440,6 +444,10 @@ PrefabInstance:
     - target: {fileID: 8414792097369639677, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
       propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8753470437143577727, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
+      propertyPath: debug
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8753470437143577727, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
       propertyPath: _responseNoPayload.m_PersistentCalls.m_Calls.Array.size
